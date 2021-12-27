@@ -1,0 +1,72 @@
+{
+  "pages": [
+    
+    "miniprogram/pages/fillDaily/index",
+    "miniprogram/pages/repairShow/index",
+    "miniprogram/pages/test/index",
+    "miniprogram/pages/index/index",
+    "miniprogram/pages/propertyMaintenance/index",
+    "miniprogram/pages/middle/middle",
+    "miniprogram/pages/mine/mine",
+    "miniprogram/pages/neighborCircle/index",
+    "miniprogram/pages/CommunityAid/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#277AF4",
+    "navigationBarTitleText": "邻聚",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "custom": true,
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#1c1c1b",
+    "list": [
+      {
+        "pagePath": "miniprogram/pages/index/index",
+        "text": "首页",
+        "iconPath": "/miniprogram/tabbarComponent/icon/home.png",
+        "selectedIconPath": "/miniprogram/tabbarComponent/icon/home-o.png"
+      },
+      {
+        "pagePath": "miniprogram/pages/neighborCircle/index",
+        "text": "邻聚圈",
+        "iconPath": "/miniprogram/tabbarComponent/icon/home.png",
+        "selectedIconPath": "/miniprogram/tabbarComponent/icon/home-o.png"
+      },
+      {
+        "pagePath": "miniprogram/pages/CommunityAid/index",
+        "text": "社区互助",
+        "iconPath": "/miniprogram/tabbarComponent/icon/home.png",
+        "selectedIconPath": "/miniprogram/tabbarComponent/icon/home-o.png"
+      },
+      {
+        "pagePath": "miniprogram/pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/miniprogram/tabbarComponent/icon/my.png",
+        "selectedIconPath": "/miniprogram/tabbarComponent/icon/my-o.png"
+      }
+    ]
+  },
+ 
+  "usingComponents": {
+    
+    "van-toast": "/miniprogram/miniprogram_npm/@vant/weapp/toast/index",
+    "van-field": "/miniprogram/miniprogram_npm/@vant/weapp/field/index",
+    "van-divider": "/miniprogram/miniprogram_npm/@vant/weapp/divider/index",
+    "van-toast": "/miniprogram/miniprogram_npm/@vant/weapp/toast/index",
+    "van-dialog": "/miniprogram/miniprogram_npm/@vant/weapp/dialog/index",
+    "van-tab": "/miniprogram/miniprogram_npm/@vant/weapp/tab/index",
+    "van-tabs": "/miniprogram/miniprogram_npm/@vant/weapp/tabs/index",
+    "van-swipe-cell": "/miniprogram/miniprogram_npm/@vant/weapp/swipe-cell/index",
+
+    "wux-toptips": "/componments/toptips/index",
+    
+    "wux-icon": "/componments/icon/index",
+    "wux-button": "/componments/button/index"
+   
+  },
+  "sitemapLocation": "sitemap.json"
+}

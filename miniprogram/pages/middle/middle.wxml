@@ -1,0 +1,1 @@
+<button bindtap="getData" type="primary">查询数据</button>

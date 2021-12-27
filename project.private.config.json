@@ -1,0 +1,71 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "个人中心",
+          "pathName": "miniprogram/pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "邻里圈",
+          "pathName": "miniprogram/pages/neighborCircle/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "社区互助",
+          "pathName": "pages/CommunityAid/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "首页",
+          "pathName": "miniprogram/pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "发布界面",
+          "pathName": "miniprogram/pages/middle/middle",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "物业报修信息提交界面",
+          "pathName": "miniprogram/pages/propertyMaintenance/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "测试",
+          "pathName": "miniprogram/pages/test/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "物业报修",
+          "pathName": "miniprogram/pages/repairShow/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "每日报送",
+          "pathName": "miniprogram/pages/fillDaily/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+page {
+  background-color: #efefef;
+  padding-bottom: 200rpx ;
+}
+.all .addBtn {
+  display: flex;
+  width: 90%;
+  margin-left: 40rpx;
+  position: fixed;
+  bottom: 40rpx;
+}
+.info_wrap {
+  display: flex;
+  height: 150rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  margin: 20rpx 20rpx;
+  padding: 10rpx ;
+  flex-direction: row;
+}
+.info_wrap .image image {
+  margin-top: 5rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 15rpx;
+}
+.info_wrap .content {
+  margin-top: 5rpx;
+}
+.info_wrap .content text {
+  color: #464646;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.info_wrap .content image {
+  margin-top: 400rpx;
+}
+.info_wrap .content .dateAndBtn {
+  color: #6e6e6e;
+  font-size: 26rpx;
+  margin: 10rpx;
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,202 @@
+page {
+  background-color: #DCE9F1;
+  margin-bottom: 150rpx;
+}
+.container .selecr_wrap {
+  background-color: white;
+  padding-top: 25rpx;
+  padding-bottom: 10rpx;
+  margin: 0 20rpx;
+  border-radius: 25rpx;
+}
+.container .selecr_wrap .select_type {
+  display: flex;
+  padding: 10rpx 10rpx;
+}
+.container .selecr_wrap .select_type navigator {
+  flex: 1;
+}
+.container .selecr_wrap .select_type navigator image {
+  width: 190rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+  position: relative;
+  margin-left: 30rpx;
+}
+.container .selecr_wrap .select_type navigator image text {
+  position: absolute;
+  left: 48%;
+  transform: translateX(-50%);
+  top: 27%;
+  text-align: center;
+  color: white;
+  font-size: 32rpx;
+  font-weight: 550;
+}
+.container .check_type {
+  display: flex;
+  position: relative;
+  margin-top: 10rpx;
+  margin-bottom: 65rpx;
+}
+.container .check_type .check_left {
+  flex: 1;
+  display: flex;
+  position: absolute;
+  left: 25rpx;
+}
+.container .check_type .check_left .recommend {
+  width: 100rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36rpx;
+  position: relative;
+  color: #277AF4;
+}
+.container .check_type .check_left .recommend button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  widows: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.container .check_type .check_left .concern {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  position: relative;
+  color: #716F6F;
+  margin-left: 25rpx;
+}
+.container .check_type .check_left .concern button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  widows: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.container .check_type .check_right {
+  flex: 1;
+  position: absolute;
+  right: 0;
+  margin-right: 25rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .check_type .check_right checkBox {
+  font-size: 28rpx;
+}
+.container .post {
+  display: flex;
+  height: 520rpx;
+  margin: 0rpx 25rpx;
+  background-color: white;
+  border-radius: 25rpx;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.container .post .all_item_wrap {
+  position: absolute;
+  margin: 18rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .post .all_item_wrap .icon_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.container .post .all_item_wrap .icon_wrap image {
+  width: 70rpx;
+  height: 70rpx;
+}
+.container .post .all_item_wrap .icon_wrap .nameanddate {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.container .post .all_item_wrap .icon_wrap .nameanddate .name {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #84B8FC;
+}
+.container .post .all_item_wrap .icon_wrap .nameanddate .date {
+  font-size: 24rpx;
+  color: #9F9F9F;
+}
+.container .post .all_item_wrap .icon_wrap button {
+  display: flex;
+  height: 50rpx;
+  width: 100rpx;
+  margin-left: 315rpx;
+  border-radius: 15px;
+  background-color: var(--themeColor);
+  border-color: var(--themeColor);
+  color: white;
+  margin-top: 20rpx;
+}
+.container .post .all_item_wrap .icon_wrap button text {
+  display: flex;
+  font-size: 23rpx;
+  margin-top: -4rpx;
+}
+.container .post .all_item_wrap .text_img_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15rpx;
+}
+.container .post .all_item_wrap .text_img_wrap text {
+  margin: 16rpx 0rpx;
+  color: #666666;
+}
+.container .post .all_item_wrap .text_img_wrap image {
+  width: 630rpx;
+  height: 300rpx;
+  border-radius: 15rpx;
+  margin-left: 0rpx;
+}
+.container .post .all_item_wrap .button_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  padding: 5rpx;
+}
+.container .post .all_item_wrap .button_wrap .item {
+  color: #CCCCCC;
+  display: flex;
+  flex-flow: row;
+  margin-right: 128rpx;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+.container .post .all_item_wrap .button_wrap .item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  widows: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.container .post .all_item_wrap .button_wrap .item image {
+  height: 28rpx;
+  width: 28rpx;
+}
+.container .post .all_item_wrap .button_wrap .item text {
+  margin-left: 5rpx;
+  font-size: 20rpx;
+}

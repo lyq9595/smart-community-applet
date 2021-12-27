@@ -1,0 +1,58 @@
+page{
+  // padding-bottom: 90rpx ;
+  background-color: #efefef;
+  padding-bottom: 200rpx ;
+}
+.all{
+ 
+  .addBtn{
+    display: flex;
+    width: 90%;
+   margin-left: 40rpx;
+   position:fixed;
+   bottom: 40rpx;
+  
+  }
+}
+
+
+.info_wrap{
+  display: flex;
+  height: 150rpx;
+  background-color: white;
+  border-radius: 15rpx;
+  margin:20rpx 20rpx;
+  padding:10rpx ;
+  flex-direction: row;
+ 
+  .image{
+    image{
+      margin-top: 5rpx;
+      width: 120rpx;
+      height:120rpx;
+      border-radius: 15rpx;
+    }
+  }
+  .content{
+    margin-top: 5rpx;
+    text{
+      color:rgb(70, 70, 70);
+      font-size: 30rpx;
+      margin-left: 20rpx;
+      display: -webkit-box;// 将对象作为弹性伸缩盒子模型显示。
+      overflow: hidden;//超出的文本隐藏
+      -webkit-box-orient:vertical; // 从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+      -webkit-line-clamp:1;//第几行写...
+    }
+   
+    .dateAndBtn{
+      color:rgb(110, 110, 110);
+      font-size:26rpx;
+      margin: 10rpx;
+      margin-top:40rpx;
+      margin-left: 20rpx;
+      
+    }
+    
+  }
+}

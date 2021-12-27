@@ -1,0 +1,67 @@
+<van-toast id="van-toast" /><!-- 弹窗-->
+<view class="all">
+  <van-tabs    active="{{ active }}" 
+  animated bind:click="tabOnClick" color='var(--themeColor)'  swipeable>
+  <van-tab title-style="font-size:32rpx" 
+  dot="{{new}}"title="待处理" name="0">
+  <block  wx:if="{{repairData1.length!=0}}" class="judage">
+    <view class="info_wrap"  wx:for="{{repairData1}}" wx:key="id">
+  <view class="image">
+  <image mode="aspectFill" src="{{item.imageUrl[0]?item.imageUrl[0]:'cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/物业报修界面图标资源/展示界面图标资源/暂无图片.png'}}" bindtap="handlePreviewImage" data-url="{{item.imageUrl}}"></image>
+  </view>
+  <view class="content">
+  <text>{{item.desc}}</text>
+  <view class="dateAndBtn">{{item.time}}</view>
+  </view>
+  </view>
+   </block>
+   <block wx:else>
+    <image  style="margin-top:200rpx;" src="cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/物业报修界面图标资源/空.png" mode="aspectFill"></image>
+  </block>
+  </van-tab>
+
+  <van-tab 
+   title-style="font-size:32rpx" title="处理中" name="1">
+   <block  wx:if="{{repairData2.length!=0}}" class="judage">
+    <view class="info_wrap"  wx:for="{{repairData2}}" wx:key="id">
+  <view class="image">
+  <image mode="aspectFill" src="{{item.imageUrl[0]?item.imageUrl[0]:'cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/物业报修界面图标资源/展示界面图标资源/暂无图片.png'}}" bindtap="handlePreviewImage" data-url="{{item.imageUrl}}" bindtap="handlePreviewImage" data-url="{{item.imageUrl}}"></image>
+  </view>
+  <view class="content">
+  <text>{{item.desc}}</text>
+  <view class="dateAndBtn">{{item.time}}</view>
+  </view>
+  </view>
+   </block>
+   <block wx:else>
+    <image style="margin-top:200rpx;" src="cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/物业报修界面图标资源/空.png" mode="aspectFill"></image>
+  </block>
+
+  </van-tab>
+
+  <van-tab  title-style="font-size:32rpx" title="已完成" name="2">
+   
+    <block  wx:if="{{repairData3.length!=0}}" class="judage">
+    <view class="info_wrap"  wx:for="{{repairData3}}" wx:key="id">
+  <view class="image">
+  <image mode="aspectFill" src="{{item.imageUrl[0]?item.imageUrl[0]:'cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/物业报修界面图标资源/展示界面图标资源/暂无图片.png'}}" bindtap="handlePreviewImage" data-url="{{item.imageUrl}}" bindtap="handlePreviewImage" data-url="{{item.imageUrl}}"></image>
+  </view>
+  <view class="content">
+  <text>{{item.desc}}</text>
+  <view class="dateAndBtn">{{item.time}}</view>
+  </view>
+  </view>
+   </block>
+   <block wx:else>
+    <image style="margin-top:200rpx;" src="cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/物业报修界面图标资源/空.png" mode="aspectFill"></image>
+  </block>
+  
+  </van-tab>
+</van-tabs><!--tabs 组件引入-->
+
+
+<view>
+  <van-button icon="https://6c31-l1-0ggt73w13408e7dd-1305134585.tcb.qcloud.la/iamges/index/%E7%89%A9%E4%B8%9A%E6%8A%A5%E4%BF%AE%E7%95%8C%E9%9D%A2%E5%9B%BE%E6%A0%87%E8%B5%84%E6%BA%90/%E6%B7%BB%E5%8A%A0.png?sign=dc56f87b5689e51f225100858637fa1f&t=1617281049"   custom-class="addBtn" color="var(--themeColor)"  type="primary" bindtap="add">添加报修</van-button>
+</view>
+
+</view>

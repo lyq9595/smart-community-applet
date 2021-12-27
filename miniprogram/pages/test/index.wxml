@@ -1,0 +1,11 @@
+<view class='content'>
+  <view class='today'>
+    <view class='info'>
+      <view class='temp'>{{weather.temperature.data}}℃</view>
+      <view class='weather'>{{weather.weather.data}} {{weather.winddirection.data}} {{weather.windpower.data}}</view>
+      <view>友情提示</view>
+      <view class='city'>{{weather.city.data}}</view>
+    </view>
+  </view>
+  <button bindtap="test">获取位置信息</button>
+</view>

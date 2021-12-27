@@ -1,0 +1,163 @@
+<!--index.wxml-->
+<van-dialog
+  title="正在开发中..."
+  use-slot
+	show="{{ show }}"
+	overlay
+  bind:close="onClose"
+>
+<image mode="widthFix" src="cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/首页图标资源/正在开发中.png" />
+</van-dialog><!--对话弹出-->
+
+<van-dialog id="van-dialog"
+	show="{{ show1 }}"
+	message ='今日已填报，请勿重复提交'
+	overlay
+	theme='round-button'
+
+/>
+
+<view class="container">
+   <!-- 通知滚动 -->
+   <view class="page__bd">
+        <wux-notice-bar loop>
+            明天下午3-5点小区停电停水，请各位居民安排好时间，有疑问请拨打社区服务热线0909-869652
+        </wux-notice-bar>
+    </view>
+    
+ 
+  <!--轮播图  -->
+  <swiper autoplay indicator-dots  interval="3000" duration="500" circular="true"
+    indicator-active-color="white"  easing-function="easeInOutCubic">
+    <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+      <navigator>
+        <image  mode="widthFix" src="{{item.image_src}}"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+
+  <!-- /* 功能服务*/ -->
+  <view class="navi-services">
+				<view class="navi-services-title">
+					<view class="navi-services-title-left">功能服务</view>
+					<view class="navi-services-title-right">更多</view>
+				</view>
+				<view class="navi-services-list">
+					<view class="navi-services-list-item">
+						<navigator open-type="navigate"  hover-class="none" url="/miniprogram/pages/repairShow/index">
+							<image src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/index/functionService/navi_record.png"></image>
+						</navigator>
+							<text>物业报修</text>
+					</view>
+					<view class="navi-services-list-item">
+						<navigator hover-class="none">
+							<image src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/index/functionService/navi_house.png"></image>
+						</navigator>
+						<text>我的房屋</text>
+					</view>
+					<view class="navi-services-list-item" bindtap="formClick">
+						<view>
+							<image src="cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/首页图标资源/疫情填报.png"></image>
+						</view>
+					<text>防控填报</text>
+					</view>
+					<view class="navi-services-list-item">
+						<navigator hover-class="none">
+							<image src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/index/functionService/navi_conv.png"></image>
+						</navigator>
+							<text>便民服务</text>
+					</view>
+					<view class="navi-services-list-item"  bindtap="storeClick">
+						<navigator hover-class="none" url="none" >
+							<image   src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/index/functionService/navi_mall_home.png"></image>
+						</navigator>
+						<text>社区商城</text>
+					</view>
+
+				</view>
+      </view>
+      
+
+      <!-- 公告通知 -->
+      <view class="navi-help">
+				<view class="navi-help-notice">
+					<view class="navi-help-notice-preimg" ></view>
+					<view class="navi-help-notice-cont">
+						<view class="navi-help-notice-cont-type">
+              <text>温馨提示</text>
+              
+						</view>
+						<text>疫情期间，做好防护措施，请不要随意外出聚会聚餐</text>
+          </view>
+          
+					<view class="navi-help-notice-arrowimg"></view>
+				</view>
+				<view class="common-line"></view>
+				<view class="navi-help-list">
+					<view class="navi-help-list-guide">
+						<view class="navi-help-list-guide-desc">
+							<text>新手指引</text>
+							<text>快速入手指南</text>
+						</view>
+						<view class="navi-help-list-guide-img"></view>
+					</view>
+					<view class="navi-help-list-wy">
+						<view class="navi-help-list-wy-desc">
+							<text>联系物业</text>
+							<text>一键拔号</text>
+						</view>
+						<view class="navi-help-list-wy-img"></view>
+					</view>
+				</view>
+      </view>
+      
+
+
+
+
+
+
+<!-- 社区新闻 -->
+  <view class="news">
+				<view class="news-head">
+					<text>社区新闻</text>
+					<view><text>更多精彩</text>
+						<image src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/index/arrow_gray.png"></image>
+					</view>
+        </view>
+  </view>
+
+
+   
+			 <!-- 媒体对象 -->
+			 <view class="new_wrap">
+			 <view class="item_wrap">
+				 <view class="image_wrap">
+					<image  src="cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/首页图标资源/安排.png" mode="widthFix" ></image>
+				 </view>
+			 <view class="text_wrap">
+			 <view class="content">5月27日核算检测流程安排,本社区居民采用咽拭子检测方法进行核酸检测,。因检测人数较多，请检测的居民必遵守通知要求一、检测前准备
+				1.提前到本部门领取检测用的条形码、表格及知情书。一人一份，不要遗失。</view>
+			 <view class="date">20201年5月23日</view>
+			 </view>
+			 </view>
+			 <van-divider   />
+
+			 <view class="item_wrap">
+				 <view class="image_wrap">
+					<image  src="cloud://l1-0ggt73w13408e7dd.6c31-l1-0ggt73w13408e7dd-1305134585/iamges/index/首页图标资源/安排.png" mode="widthFix" ></image>
+				 </view>
+			 <view class="text_wrap">
+			 <view class="content">5月27日核算检测流程安排,本社区居民采用咽拭子检测方法进行核酸检测,。因检测人数较多，请检测的居民必遵守通知要求一、检测前准备
+1.提前到本部门领取检测用的条形码、表格及知情书。一人一份，不要遗失。</view>
+			 <view class="date">20201年5月23日</view>
+			 </view>
+			 </view>
+			 
+			 
+			 
+			 </view>
+			 
+  <!--导航栏  -->
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

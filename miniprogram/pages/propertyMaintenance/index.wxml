@@ -1,0 +1,94 @@
+<van-toast id="van-toast" /><!-- 弹窗-->
+<wux-toptips id="wux-toptips" /><!--顶部提示 组件引入-->
+
+
+<view class="wrap">
+ <view class="contant_wrap" style="border-radius: 20rpx 20rpx 0rpx 0rpx">
+ <view class="contant">
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入报修内容"
+    border=" true "
+    center='{{true}}'
+    maxlength="300"
+    show-word-limit='{{true}}'
+    show-confirm-bar='{{true}}'
+    bind:change="bindTextAreaBlur"
+    type="textarea"
+    custom-style="font-size:34rpx;"
+    autosize="{{autosize}}"
+   />
+ </view>
+ <view class="contant-pic">
+ <view class="pics-list"  wx:for="{{pics}}" wx:key="id" >
+ <image src="{{item}}" bindtap="handlePreviewImage" data-url="{{item}}"   class="uploadImg"></image>
+ <image mode="widthFix" src='{{deleteImgUrl}}' class="uploadImg-error" data-img="{{item}}" bindtap='deleteImg'></image>
+ </view>
+ <image mode="widthFix" src='{{addImgUrl}}' class="uploadImg {{isShow?'true':'hideTrue'}}" bindtap='uploadImage'  style=" margin:40rpx;    width: 130rpx; height: 130rpx; display: block; box-sizing: border-box"></image>
+ </view>
+ </view>
+ <van-cell-group   >
+  <van-divider custom-style=" margin:0rpx" />
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入联系方式"
+    border="{{ true }}"
+    required="{{ true }}"
+    left-icon="phone-o"
+    center='{{true}}'
+    label="联系方式"
+    maxlength="20"
+    bind:change="inputPhone"
+    size="large"
+   />
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入姓名"
+    border="{{ true }}"
+    required="{{ true }}"
+    left-icon="user-o"
+    center='{{true}}'
+    label="姓名"
+    maxlength="15"
+    bind:change="inputName"
+    size="large"
+  />
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入报修房屋"
+    border="{{ true }}"
+    required="{{ false }}"
+    left-icon="hotel-o"
+    center='{{true}}'
+    label="房屋"
+    maxlength="15"
+    bind:change="inputHouse"
+    size="large"
+  />
+</van-cell-group>
+  
+
+<!-- 时间预约 -->
+<view catchtap="hideKeyBorder">
+<picker mode="multiSelector" bindchange="bindStartMultiPickerChange"  header-text='{{headerText}}'
+ bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" 
+ value="{{multiIndex}}" range="{{multiArray}}"> 
+ <van-field custom-style="border-radius:  0rpx 0rpx 20rpx 20rpx"
+    value="{{ value }}"
+    placeholder="{{startDate}}"
+    placeholder-style="color:black;"
+    border="{{ true }}"
+    required="{{ true }}"
+    left-icon="underway-o"
+    center='{{true}}'
+    label="预约时间"
+    maxlength="15"
+    size="large"
+    bind:change="inputTime"
+  />
+ </picker>
+</view>
+
+
+ <view class="bottom"  bindtap='submit' style="border-radius: 5rpx; position: fixed  ">提交</view>
+</view>

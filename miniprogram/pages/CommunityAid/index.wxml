@@ -1,0 +1,96 @@
+<view class="container">
+    <!-- 求助部分 -->
+    <view class="help_wrap">
+    <view class="help"> 
+        <image  src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/help/help.png" mode="aspectFit">
+          
+        </image>       
+    </view>
+  </view>
+
+<!-- 求助按钮 -->
+  <button bindtap="handleHelpBtn"  type="default">
+            <text>发起求助</text>
+          </button> 
+
+          <!-- 随便看看 -->
+          <view class='home_top_title'>
+    <view class='home_top_title_left'>随便看看</view>
+    <view  class='home_top_title_right'>
+      <view  class='home_top_title_right_text' bindtap='goToAllTopics'>更多问题</view>
+      <image  class='home_top_title_right_image' src='cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/help/right_arrow.png'></image>
+    </view>
+  </view>
+
+
+    <!--问题列表-->
+<view class='question_item' wx:key="{{item.topic_id}}" data-topicId="{{item.topic_id}}" wx:for="{{topicList}}">
+
+  <!-- 最上面一列 头像及基本信息 -->
+<view class='question_person_and_star'>
+  <view class='question_person' catchtap='personInfo' data-userId='{{item.user_id}}'>
+    <image class='question_person_header' src="{{item.img_url==''?'cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/user_icon1.png':item.img_url}}"></image>
+    <text class='question_person_nickname'>{{item.name}}</text>
+  </view>
+  <button><text>帮</text></button>
+</view>
+<!-- 问题字段文字 -->
+<view class='question_remark'>
+  {{item.content.txt}}
+</view>
+
+<!-- 位置及评论 -->
+<view class='comment_and_positon_container'>
+  <!--位置 -->
+  <view class='position_container'>
+    <image class='icon' src='cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/help/location.png'></image>
+    <!-- <text class='icon_text'>{{item.comment_num}}</text> -->
+    <text class='location_text'>乌鲁木齐花园社区</text>
+  </view>
+  <!-- 评论 -->
+  <view class='comment_container'>
+    <image class='icon' src='cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/help/comment.png'></image>
+    <text class='icon_text'>{{item.comment_num}}</text>
+  </view>
+  <!-- 展开 -->
+  <view class='extend_container'>
+    <image class='icon' src='cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/help/extend.png'></image>
+  </view>
+  
+</view>
+ 
+
+<!-- 剩余时间 -->
+<view class='time_left' wx:if="{{item.is_reply==0?true:false}}">
+  剩余时间:1小时28分
+</view>
+
+<view class='question_item_innder_divideline'>
+</view>
+
+</view>
+
+
+
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

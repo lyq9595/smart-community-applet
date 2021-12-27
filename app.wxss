@@ -1,0 +1,36 @@
+/**app.wxss**/
+
+@import "./miniprogram/styles/iconfont.wxss";
+@import "./miniprogram/styles/checkBox.wxss";
+@import "./miniprogram/styles/wui.wxss";
+
+@import "./miniprogram/colorui/main.wxss";
+@import "./miniprogram/colorui/icon.wxss"
+
+/* 在微信小程序中不支持通配符 * */
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+page{
+   /* 定义主题颜色 */
+   --themeColor:#277AF4;
+  
+   font-size: 28rpx;
+}
+image{
+   width: 100%;
+}
+
+
+
+
+
+
+
+
+

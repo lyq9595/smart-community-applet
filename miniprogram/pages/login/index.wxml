@@ -1,0 +1,2 @@
+
+<button bindtap="getUserProfile">点击登录</button>

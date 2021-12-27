@@ -1,0 +1,131 @@
+<view class="container">
+
+  <!-- 类型选择 -->
+  <view class="selecr_wrap">
+  <view class="select_type">
+    <navigator>
+        <image  mode="scaleToFill"  src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/type1.png">
+          <text>志友集</text>
+        </image>
+      </navigator>
+      <navigator>
+        <image  mode="scaleToFill"  src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/type2.png">
+        <text>鉴菜品</text>
+      </image>
+      </navigator>
+      <navigator>
+        <image  mode="scaleToFill"  src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/type3.png">
+          <text>推好物</text>
+        </image>
+      </navigator>
+  </view>
+  </view>
+
+  <!--推荐关注 那一列  -->
+  <view class="check_type">
+    <view class="check_left">
+      <view bindtap="handleRecommend" class="recommend">
+        推荐<button ></button>  
+      </view>
+      <view bindtap="handleConcern" class="concern">
+        关注<button></button>  
+      </view>
+    </view>
+
+    <view class="check_right">
+      <checkbox checked="{{true}}">显示其他社区</checkbox>
+    </view>
+  </view>
+
+  <!-- 帖子列 -->
+
+  <view class="post">
+  <view class="all_item_wrap">
+  <view class="icon_wrap">
+   <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/user_icon.png"></image> 
+  <view class="nameanddate">
+    <text class="name">卢燕-阳光小区</text>
+    <text class="date">2021/2/3</text>
+  </view>
+  <view bindtap="addConcern" class="addConcern">
+    <button><text>关注</text></button>
+  </view>
+  
+  </view>
+  <view class="text_img_wrap">
+   <text>刚学的新菜:干野菌烧肉,慢火烧出的好味五花肉！ </text>
+   <image mode="aspectFill" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/dishes1.png"></image>
+  </view>
+  <view class="button_wrap">
+    <view class="item">
+      <button bindtap="handleLoveClick"></button>  
+      <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/like-o.png"></image>
+      <text>42</text>
+    </view>
+    <view class="item">
+      <button bindtap="handleCommentClick"></button>  
+      <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/comment.png"></image>
+      <text>123</text>
+    </view>
+    <view class="item">
+      <button bindtap="handleCollectionClick"></button>  
+      <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/shoucang.png"></image>
+      <text>10</text>
+    </view>
+    <view class="item">
+      <button bindtap="handleHelpClick"></button>  
+      <image  mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/dianzan.png"></image>
+      <text>321</text>
+    </view>
+
+  </view>
+  </view>
+  </view>
+
+  <view class="post">
+  <view class="all_item_wrap">
+  <view class="icon_wrap">
+   <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/user_icon1.png"></image> 
+  <view class="nameanddate">
+    <text class="name">李明-和谐小区</text>
+    <text class="date">2021/2/2</text>
+  </view>
+  <view bindtap="addConcern" class="addConcern">
+    <button><text>关注</text></button>
+  </view>
+  
+  </view>
+  <view class="text_img_wrap">
+   <text>有没有人明天早上9点一起跑步,小区花园集合。 </text>
+   <image mode="aspectFill" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/run.png"></image>
+  </view>
+  <view class="button_wrap">
+    <view class="item">
+      <button bindtap="handleLoveClick"></button>  
+      <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/dianzan.png"></image>
+      <text>80</text>
+    </view>
+    <view class="item">
+      <button bindtap="handleCommentClick"></button>  
+      <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/comment.png"></image>
+      <text>261</text>
+    </view>
+    <view class="item">
+      <button bindtap="handleCollectionClick"></button>  
+      <image mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/shoucang.png"></image>
+      <text>50</text>
+    </view>
+    <view class="item">
+      <button bindtap="handleHelpClick"></button>  
+      <image  mode="aspectFit" src="cloud://lingju-2gmbkk11474c4790.6c69-lingju-2gmbkk11474c4790-1305134585/images/circleImg/join.png"></image>
+      <text>21</text>
+    </view>
+
+  </view>
+  </view>
+  </view>
+
+
+
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>
