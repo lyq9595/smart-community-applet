@@ -87,8 +87,10 @@
 别的地方买800，900上千，我们平台统一价格**20￥**，平台内还有许多其他教程，想要做这些项目的，想要购买教程的，可以扫这个二维码进入商城购买。
 
 【腾讯文档】网创项目介绍F.pdf
-https://docs.qq.com/pdf/DTnBCU2RaZWNpVFRY
+https://docs.qq.com/pdf/DTmlPWnpoT3VpcldH
 
 联系方式微信：**xl110387**
+
+**用浏览器扫码打开**
 
 ![co](https://lyqblog.oss-cn-beijing.aliyuncs.com/icon.png)
